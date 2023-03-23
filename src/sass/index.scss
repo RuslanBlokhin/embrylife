@@ -1,5 +1,17 @@
-@import './base/common';
+//base
 @import './base/fonts';
+@import './base/common';
 @import './base/container';
-
+// Utils
+@import './utils/variables';
+@import './utils/mixins';
+// Components
+@import './components/button';
+// @import './components/checkbox';
+// @import './components/input';
+// Layout
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
+// @import './layout/modal';
 
