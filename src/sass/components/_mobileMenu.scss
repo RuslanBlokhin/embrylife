@@ -1,0 +1,114 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 15px 10px 42px;
+    z-index: 5;
+    background-color: #fff;
+    overflow-y: scroll;
+
+    &__header {
+        @include fc(space-between);
+        margin-bottom: 15px;
+    }
+    &__list {
+    }
+    &__item {
+        padding: 14px 17px 17px 3px;
+        font-size: 18px;
+        line-height: 1.44;
+        color: #76767E;
+        border-bottom: 1px solid #EDEDED;
+        
+        &:first-child {
+            border-top: 1px solid #EDEDED;
+        }
+        &.active {
+            position: relative;
+            left: -5px;
+            width: 310px;
+            padding: 14px 23px 17px 9px;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            background-color: var(--primary-accent-color);
+            & .mobile-menu__item-button {
+                color: #fff;
+            }
+            & .arrowRightLogo {
+                stroke {
+                    fill: #fff
+                }
+            }
+
+        }
+    }
+    &__item-button {
+        @include fc(space-between);
+
+    }
+    &__arrowRightLogo {
+        @include fc(center);
+        width: 12px;
+        height: 12px;
+    }
+    &__item-link {
+        color: #76767E;
+    }
+    &__services-list {
+    }
+    &__vkr {
+    }
+    &__contacts-block {
+        margin-top: 40px;
+    }
+    &__address {
+        margin-bottom: 26px;
+        font-size: 21px;
+        line-height: 1.24;
+        text-align: center;
+    }
+    &__phone {
+        margin-bottom: 4px;
+        font-size: 21px;
+        line-height: 1.24;
+        text-align: center;
+    }
+    &__description {
+        margin-bottom: 26px;
+        text-align: center;
+    }
+    &__request-button {
+        margin-bottom: 10px;
+    }
+    &__way-button {
+        margin-bottom: 40px;
+    }
+    &__embrylife-social-wrapper {
+        text-align: center;
+
+        &.top {
+            margin-bottom: 42px;
+        }
+    }
+    &__embrylife-social {
+        @include fc(center);
+        gap: 15px;
+        margin-bottom: 16px;
+    }
+    &__social-link {
+    }
+    &__description-embrylife {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    &__join {
+        font-size: 18px;
+        line-height: 26px;
+        color: var(--secondary-accent-color);
+    }
+}

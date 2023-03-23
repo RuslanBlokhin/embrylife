@@ -1,0 +1,74 @@
+.header {
+    height: 62px;
+    padding: 15px 10px 0;
+
+    &__wrapper {
+        position: fixed;
+        top: 0;
+        min-width: 300px;
+        padding-top: 15px;
+    }
+    &__mobile {
+        @include fc(space-between);
+    }
+    &__menu-icon {
+        width: 14px;
+        height: 14px;
+    }
+    &__embrylife-icon {
+        height: 26px;
+    }
+    &__phone-icon {
+        width: 44px;
+        height: 44px;
+    }
+    &__desktop {
+        display: none;
+    }
+    &__desktop-top-block {
+    }
+    &__location {
+    }
+    &__location-icon {
+    }
+    &__location-text {
+    }
+    &__working-hours {
+    }
+    &__contacts {
+    }
+    &__whatsApp-icon {
+    }
+    &__phone {
+    }
+    &__search-icon {
+    }
+    &__language {
+    }
+    &__language-item {
+    }
+    &__desktop-nav-block {
+    }
+    &__nav-list {
+    }
+    &__nav-item {
+    }
+    &__nav-arrowDown-btn {
+    }
+    &__nav-arrowDown-icon {
+    }
+    &__nav-item-link {
+    }
+    &__request-button {
+    }
+    &__services {
+    }
+    &__services-title {
+    }
+    &__services-link {
+    }
+    &__services-list {
+    }
+    &__services-item {
+    }
+}
