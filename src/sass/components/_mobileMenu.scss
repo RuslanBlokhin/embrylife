@@ -14,8 +14,6 @@
         @include fc(space-between);
         margin-bottom: 15px;
     }
-    &__list {
-    }
     &__item {
         padding: 14px 17px 17px 3px;
         font-size: 18px;
@@ -57,59 +55,5 @@
     }
     &__item-link {
         color: #76767E;
-    }
-    &__services-list {
-    }
-    &__vkr {
-    }
-    &__contacts-block {
-        margin-top: 40px;
-    }
-    &__address {
-        margin-bottom: 26px;
-        font-size: 21px;
-        line-height: 1.24;
-        text-align: center;
-    }
-    &__phone {
-        margin-bottom: 4px;
-        font-size: 21px;
-        line-height: 1.24;
-        text-align: center;
-    }
-    &__description {
-        margin-bottom: 26px;
-        text-align: center;
-    }
-    &__request-button {
-        margin-bottom: 10px;
-    }
-    &__way-button {
-        margin-bottom: 40px;
-    }
-    &__embrylife-social-wrapper {
-        text-align: center;
-
-        &.top {
-            margin-bottom: 42px;
-        }
-    }
-    &__embrylife-social {
-        @include fc(center);
-        gap: 15px;
-        margin-bottom: 16px;
-    }
-    &__social-link {
-    }
-    &__description-embrylife {
-        margin-bottom: 10px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 26px;
-    }
-    &__join {
-        font-size: 18px;
-        line-height: 26px;
-        color: var(--secondary-accent-color);
     }
 }
