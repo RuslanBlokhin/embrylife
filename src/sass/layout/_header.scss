@@ -15,6 +15,7 @@
         top: 0;
         padding: 15px 10px 10px;
         background-color: #F3F2F2;
+        z-index: 10;
     }
     &__mobile {
         @include fc(space-between);
@@ -231,9 +232,6 @@
             &:focus .header__services-link {
                 color: var(--secondary-accent-color);
             }
-        }
-        &__services-link {
-           
         }
         &__services-list {
             margin-bottom: 35px;

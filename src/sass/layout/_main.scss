@@ -1,0 +1,152 @@
+.main {
+    .glide {
+    }
+    &__hero {
+        position: relative;
+    }
+    .glide__track {
+    }
+    .glide__slides {
+    }
+    &__hero-list {
+    }
+    .glide__slide {
+    }
+    &__hero-item {
+        padding: 30px 12px 64px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        text-align: center;
+    }
+    &__hero-title {
+        margin-bottom: 14px;
+        font-size: 32px;
+        line-height: 1;
+    }
+    &__hero-description {
+        margin-bottom: 23px;
+    }
+    &__hero-button {
+        width: 150px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+     &__hero-controls {
+        @include fc(center);
+        position: absolute;
+        bottom: 23px;
+        left: 50%;
+        margin-left: -35px;
+    }
+    .glide__arrow {
+    }
+    &__hero-controls-arrow {
+        display: none;
+    }
+    .left {
+    }
+    &__controls-arrow-left-wrapper {
+    }
+    .glide__bullets {
+    }
+    &__controls-dots {
+        @include fc(center);
+        gap: 19px;
+    }
+    .glide__bullet {
+        width: 4px;
+        height: 4px;
+        background-color: #4A7D7A;
+        border-radius: 50%;
+
+        &--active {
+            @include fc(center);
+            position: relative;
+            width: 27.19px;
+            height: 28.53px;
+            background-color: #fff;
+            border: 2px solid var(--primary-accent-color);
+            
+            &::after {
+                content: '';
+                // position: absolute;
+                // left: 10.88px;
+                // top: 11.42px;
+                width: 5.43px;
+                height: 5.7px;
+                border-radius: 50%;
+                background-color: var(--primary-accent-color);
+            }
+        }
+    }
+    &__hero-controls-dot {
+    }
+    .right {
+    }
+    &__services {
+    }
+    &__services-list {
+    }
+    &__services-item {
+    }
+    &__services-link {
+    }
+    &__services-icon {
+    }
+    &__services-title {
+    }
+    &__services-arrow-icon {
+    }
+    .desktop {
+    }
+    .price {
+    }
+    &__services-buttons {
+    }
+    &__services-button {
+    }
+    .button--second {
+    }
+    .button--first {
+    }
+    &__request {
+    }
+    &__request-title {
+    }
+    &__request-description {
+    }
+    &__request-gallery {
+    }
+    &__request-gallery-list {
+    }
+    &__request-gallery-item {
+    }
+    &__image-wrapper {
+    }
+    &__employee-name {
+    }
+    &__employee-description {
+    }
+    &__gallery-button {
+    }
+    &__request-gallery-buttons {
+    }
+    .mobile {
+    }
+    &__request-gallery-button {
+    }
+    &__about {
+    }
+    &__about-title {
+    }
+    &__about-description {
+    }
+    &__about-list {
+    }
+    &__about-value {
+    }
+    &__about-value-description {
+    }
+    &__about-button {
+    }
+}
