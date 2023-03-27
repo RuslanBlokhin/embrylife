@@ -1,74 +1,262 @@
 .header {
+    width: 100%;
+    position: relative;
     height: 62px;
     padding: 15px 10px 0;
 
+    .phoneLogo {
+        width: 46px;
+        height: 46px;
+    }
+
     &__wrapper {
+        width: 100%;
         position: fixed;
         top: 0;
-        min-width: 300px;
         padding-top: 15px;
+        height: inherit;
     }
     &__mobile {
         @include fc(space-between);
     }
     &__menu-icon {
-        width: 14px;
-        height: 14px;
+        width: 23px;
+        height: 16px;
     }
     &__embrylife-icon {
         height: 26px;
     }
     &__phone-icon {
-        width: 44px;
-        height: 44px;
+        width: 65px;
+        height: 46px;
     }
     &__desktop {
         display: none;
     }
-    &__desktop-top-block {
-    }
-    &__location {
-    }
-    &__location-icon {
-    }
-    &__location-text {
-    }
-    &__working-hours {
-    }
-    &__contacts {
-    }
-    &__whatsApp-icon {
-    }
-    &__phone {
-    }
-    &__search-icon {
-    }
-    &__language {
-    }
-    &__language-item {
-    }
-    &__desktop-nav-block {
-    }
-    &__nav-list {
-    }
-    &__nav-item {
-    }
-    &__nav-arrowDown-btn {
-    }
-    &__nav-arrowDown-icon {
-    }
-    &__nav-item-link {
-    }
-    &__request-button {
-    }
-    &__services {
-    }
-    &__services-title {
-    }
-    &__services-link {
-    }
-    &__services-list {
-    }
-    &__services-item {
+}
+
+@media screen and (min-width: 1600px) {
+    .header {
+        height: 135px;
+
+        &__mobile {
+            display: none;
+        }
+        &__desktop {
+            display: block;
+            width: 1290px;
+            margin: 0 auto;
+        }
+        &__desktop-top-block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        &__embrylife-icon {
+            margin-right: 84px;
+        }
+        &__location {
+            display: flex;
+            align-items: center;
+            margin-right: 80px;
+        }
+        &__location-icon {
+            height: 22px;
+            margin-right: 14px;
+        }
+        &__location-text {
+            font-size: 18px;
+            line-height: 1.17;
+        }
+        &__working-hours {
+            margin-right: 33px;
+            font-size: 18px;
+            line-height: 1.17;
+        }
+        &__contacts {
+            display: flex;
+            align-items: center;
+            margin-right: 55px;
+        }
+        &__whatsApp-icon {
+            height: 40px;
+            margin-right: 12px;
+        }
+        .phoneLogo {
+            width: 44px;
+            height: 44px;
+        }
+        &__phone-icon {
+            width: 44px;
+            height: 44px;
+            margin-right: 15px;
+        }
+        &__phone {
+            font-size: 18px;
+            line-height: 1.44;
+            cursor: text;
+        }
+        &__search-icon {
+            height: 22px;
+            margin-right: 60px;
+        }
+        &__language {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        &__language-item {
+            font-size: 18px;
+            font-weight: 450;
+            line-height: 1.17;
+            color: #B5BBC9;
+            transition: all 200ms ease;
+
+            &:hover, &:focus {
+                color: var(--primary-accent-color);
+            }
+        }
+        &__desktop-nav-block {
+            @include fc(space-between);
+        }
+        &__nav-list {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            margin-right: 30px;
+            background-color: #ECECEC;
+            border-radius: 10px;
+        }
+        &__nav-item {
+            @include fc(center);
+            position: relative;
+            height: 60px;
+            padding: 0 27px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            border-radius: 10px;
+            transition: all 200ms ease;
+            cursor: pointer;
+
+            &:hover, &:focus {
+                background-color: var(--primary-accent-color);
+            }
+            &:hover .header__nav-arrowDown-btn, 
+            &:focus .header__nav-arrowDown-btn {
+                color: #fff;
+            }
+            &:hover .header__nav-item-link, 
+            &:focus .header__nav-item-link {
+                color: #fff;
+            }
+            &:hover .arrowDownLogo, 
+            &:focus .arrowDownLogo {
+                path {
+                    stroke: #fff;
+                }
+            }
+
+            &.active {
+                background-color: #fff;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -21px;
+                    left: 43%;
+                    border: 11px solid transparent; 
+                    border-top: 11px solid #fff;
+                }
+            }
+
+            &.active .header__nav-arrowDown-btn, 
+            &.active .header__nav-item-link {
+                color: var(--primary-accent-color);
+            }
+
+            &.active .arrowDownLogo {
+                path {
+                    stroke: var(--primary-accent-color);
+                } 
+            }
+        }
+        &__nav-arrowDown-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            height: 100%;
+        }
+        &__nav-arrowDown-icon {
+            height: 26px;
+            transition: all 200ms ease;
+            transform: rotate(0);
+
+            &.rotate {
+                transform: rotate(180deg);
+            }
+        }
+        &__request-button {
+            width: 190px;
+            height: 60px;
+
+        }
+        &__services {
+            display: flex;
+            gap: 60px;
+            position: fixed;
+            left: 50%;
+            top: 156px;
+            margin-left: -750px;
+            width: 1500px;
+            height: 495px;
+            padding: 65px 0 69px 107px;
+            background-color: #FFFFFF;
+            border-radius: 30px;
+        }
+        &__services-column {
+            width: 300px;
+
+        }
+        &__services-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 31px;
+            transition: all 200ms ease;
+
+            &:hover .header__services-link, 
+            &:focus .header__services-link {
+                color: var(--secondary-accent-color);
+            }
+        }
+        &__services-link {
+           
+        }
+        &__services-list {
+            margin-bottom: 35px;
+
+            &.right-block {
+                margin-bottom: 65px;
+            }
+        }
+        &__services-item {
+            margin-bottom: 10px;
+            transition: all 200ms ease;
+
+            &:hover .header__services-link, 
+            &:focus .header__services-link {
+                color: var(--secondary-accent-color);
+            }
+
+            .header__services-link {
+                font-family: 'Montserrat', Arial, sans-serif;
+                font-style: normal;
+                color: #6C6D76;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+            }
+        }
     }
 }

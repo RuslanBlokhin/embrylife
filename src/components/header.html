@@ -22,103 +22,64 @@
                     </div>
                     <h4 class="header__location-text">СПб, Спасский пер., дом 14/35</h4>
                 </div>
-                <div class="header__working-hours">Ежедневно с 09:00 до 21:00</div>
+                <h4 class="header__working-hours">Ежедневно с 09:00 до 21:00</h4>
                 <div class="header__contacts">
-                    <div class="header__whatsApp-icon">
+                    <a href="https://wa.me/78126039175" class="header__whatsApp-icon">
                         <include src="icons/header/whatsAppLogo.html">
-                    </div>
-                    <div class="header__phone-icon">
+                    </a>
+                    <a href="tel:+78126039175" class="header__phone-icon">
                         <include src="icons/header/phoneLogo.html">
-                    </div>
+                    </a>
                     <h4 class="header__phone">+7 (812) 603-91-75</h4>
                 </div>
                 <div class="header__search-icon">
                     <include src="icons/header/searchLogo.html">
                 </div>
                 <div class="header__language">
-                    <span class="header__language-item">
+                    <button type="button" class="header__language-item">
                         RU
-                    </span>
-                    <span class="header__language-item">
+                    </button>
+                    <button type="button" class="header__language-item">
                         EN
-                    </span>
+                    </button>
                 </div>
             </div>
             <nav class="header__desktop-nav-block">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <button id="arrow-down" type="button" class="header__nav-arrowDown-btn">
-                            <span>Услуги</span>
-                            <div class="header__nav-arrowDown-icon">
+                        <button name="services" id="open-desktop-menu-btn" type="button" class="header__nav-arrowDown-btn">
+                            Услуги
+                            <div id="arrow-down" class="header__nav-arrowDown-icon">
                                 <include src="icons/header/arrowDownLogo.html">
                             </div>
                         </button>
                     </li>
                     <li class="header__nav-item">
-                        <button id="arrow-down" type="button" class="header__nav-arrowDown-btn">
-                            <span>О клинике</span>
-                            <div class="header__nav-arrowDown-icon">
+                        <button name="about" id="open-desktop-menu-btn" type="button" class="header__nav-arrowDown-btn">
+                            О клинике
+                            <div id="arrow-down" class="header__nav-arrowDown-icon">
                                 <include src="icons/header/arrowDownLogo.html">
                             </div>
                         </button>
                     </li>
                     <li class="header__nav-item"><a href="#" class="header__nav-item-link">Врачи</a></li>
                     <li class="header__nav-item"><a href="#" class="header__nav-item-link">Стоимость</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-item-link">Акции</a></li>
                     <li class="header__nav-item"><a href="#" class="header__nav-item-link">Статьи</a></li>
                     <li class="header__nav-item"><a href="#" class="header__nav-item-link">Онлайн оплата</a></li>
                     <li class="header__nav-item">
-                        <button type="button">
-                            <span>Пациентам</span>
-                            <div class="header__nav-arrowDown-icon">
+                        <button name="patients" id="open-desktop-menu-btn" type="button" class="header__nav-arrowDown-btn">
+                            Пациентам
+                            <div id="arrow-down" class="header__nav-arrowDown-icon">
                                 <include src="icons/header/arrowDownLogo.html">
                             </div>
                         </button>
                     </li>
                     <li class="header__nav-item"><a href="#" class="header__nav-item-link">Контакты</a></li>
                 </ul>
-                <button id="request-button" type="button" class="header__request-button button--third">
+                <button id="request-button" type="button" class="header__request-button button button--second">
                     Запись на прием
                 </button>
             </nav>
-            <div class="header__services">
-                <h3 class="header__services-title"><a href="#" class="header__services-link">ЭКО/ВРТ</a></h3>
-                <ul class="header__services-list">
-                    <li class="header__services-item"><a href="#" class="header__services-link">ЭКО/ИКСИ стандарт</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">ЭКО в естественном цикле</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">ЭКО с минимальной стимуляцией</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">Отсроченное материнство</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">Криоперенос эмбрионона </a></li>
-                </ul>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">ЭКО по ОМС</a></h3>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">Онлайн консультация</a></h3>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">Андрология</a></h3>
-                <ul class="header__services-list">
-                    <li class="header__services-item"><a href="#" class="header__services-link">Консультация уролога-андролога</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">Спермограмма</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">MESA/TESA</a></li>
-                </ul>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">Оперативная гинекология</a></h3>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">Эстетическая гинекология</a></h3>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">Центр лечения эндометриоза</a></h3>
-                <ul class="header__services-list">
-                    <li class="header__services-item"><a href="#" class="header__services-link">Физеотерапевтическое лечение</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">PRP-терапия</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">Ультразвуковая кавитация</a></li>
-                </ul>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">Лабораторная диагностика</a></h3>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">Эндокринология</a></h3>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">Терапия</a></h3>
-                <ul class="header__services-list">
-                    <li class="header__services-item"><a href="#" class="header__services-link">ЭКГ</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">Терапевт</a></li>
-                </ul>
-                <h3 class="header__services-title"><a href="#" class="header__services-link">Генетика</a></h3>
-                <ul class="header__services-list">
-                    <li class="header__services-item"><a href="#" class="header__services-link">Консультация генетика</a></li>
-                    <li class="header__services-item"><a href="#" class="header__services-link">Лабораторно – генетические исследования</a></li>
-                </ul>
-            </div>
         </div>
     </div>
 </header>
