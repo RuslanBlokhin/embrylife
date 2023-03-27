@@ -1,9 +1,14 @@
 .footer {
     padding: 0 10px 38px;
     background-color: #fff;
-    &__navigation {
 
+    &__desktop-navigation,
+    &__embrylife-icon,
+    &__embrylife-social,
+    &__search-block-desktop {
+        display: none;
     }
+
     &__navigation-list {
         padding-top: 14px;
     }
@@ -14,23 +19,16 @@
         &:not(:last-child) {
             margin-bottom: 15px;
         }
-        // &:first-child {
-        //     border-top: 1px solid #EDEDED;
-        // }
-    }
-    .active {
     }
     &__navigation-item-button {
         @include fc(space-between);
         font-weight: 450;
         color: #76767E;
     }
-    .mobile-menu__arrowRightLogo {
-    }
     &__navigation-item-link {
         color: #76767E;
     }
-    &__search-block {
+    &__search-block-mobile {
         margin-top: 28px;
         margin-bottom: 65px;
     }
@@ -57,8 +55,6 @@
             color: #9D9D9D;
         }
     }
-    &__coat-of-arms {
-    }
     &__coat-of-arms-logo {
         margin: 0 auto;
         width: 30px;
@@ -69,8 +65,6 @@
     }
     &__review-button-wrapper {
         margin-bottom: 26px;
-    }
-    &__review-button {
     }
     &__links-block {
         display: flex;
@@ -87,8 +81,6 @@
             margin-bottom: 14px;
         }
     }
-    .desktop {
-    }
     &__link {
         font-family: 'Montserrat', Arial, sans-serif;
         font-style: normal;
@@ -96,5 +88,128 @@
         font-size: 14px;
         line-height: 1.5;
         color: #6C6D76;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .footer {
+        padding: 68px 104px 63px;
+        &__navigation,
+        &__contacts-wrapper,
+        &__search-block-mobile,
+        &__review-button-wrapper-mobile {
+            display: none;
+        }
+        &__desktop-navigation,
+        &__embrylife-icon {
+            display: block;
+        }
+        .header__services {
+            position: static;
+            margin-left: 0;
+            padding: 0;
+            height: auto;
+        }
+        .contacts__way-button {
+            display: none;
+        }
+        .embrylifeLogo {
+            width: 196px;
+            height: 37px;
+        }
+        &__embrylife-icon {
+            margin-bottom: 63px;
+        }
+        &__desktop-info {
+            display: flex;
+            margin-top: 69px;
+            margin-bottom: 22px;
+        }
+
+        &__desktop-info-link {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 31px;
+        }
+        &__desktop-info-item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &__desktop-info-item-block {
+            text-align: left;
+            &:nth-child(2) {
+              margin-left: 255px;  
+            }
+            &:nth-child(3) {
+                margin-left: 255px;  
+            }
+            &:nth-child(4) {
+                margin-left: 207px;  
+            }
+        }
+        .contacts__address,
+        .contacts__phone,
+        .contacts__description {
+            text-align: left;
+        }
+        .contacts__description {
+            margin-bottom: 0;
+        }
+        &__embrylife-social {
+            display: flex;
+            align-items: center;
+            margin-bottom: 77px;
+        }
+        .contacts__embrylife-social-wrapper {
+            text-align: left;
+            &.top {
+                margin-right: 160px;
+                margin-bottom: 0;
+            }
+        }
+        .contacts__embrylife-social {
+            justify-content: flex-start;
+        }
+        &__search-block-desktop {
+            display: block;
+            width: 300px;
+            margin-left: 108px;
+        }
+        &__coat-of-arms {
+            display: flex;
+            align-items: center;
+        }
+        &__coat-of-arms-description {
+            display: block;
+            margin-left: 16px;
+            font-size: 12px;
+            line-height: 1.33;
+        }
+        &__coat-of-arms-logo {
+            min-width: 30px;
+        }
+        &__button-block {
+            margin-left: 68px;
+        }
+        &__request-button {
+            margin-bottom: 22px;
+            height: 60px;
+        }
+        &__review-button {
+            height: 40px;
+        }
+        &__links-item {
+            &.desktop {
+                display: block;
+            }
+        }
+        &__links-block {
+            flex-direction: row;
+            gap: 55px;
+        }
+        &__links-item:not(:last-child) {
+            margin: 0;
+        }
     }
 }

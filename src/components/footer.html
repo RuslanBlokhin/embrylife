@@ -1,4 +1,7 @@
 <footer class="footer">
+    <div class="footer__embrylife-icon">
+        <include src="icons/header/embrylifeLogo.html">
+    </div>
     <nav class="footer__navigation">
         <ul class="footer__navigation-list">
             <li class="footer__navigation-item">
@@ -78,8 +81,80 @@
             <li class="footer__navigation-item"><a href="#" class="footer__navigation-item-link">Контакты</a></li>
         </ul>
     </nav>
-    <include src="components/content/contacts.html"></include>
-    <div class="footer__search-block">
+    <div class="footer__desktop-navigation">
+        <include src="components/modals/desktopMenu.html"></include>
+        <div class="footer__desktop-info">
+            <div class="footer__desktop-info-item-block">
+                <div class="footer__desktop-info-item"><a href="#" class="footer__desktop-info-link">О клинике</a></div>
+                <div class="footer__desktop-info-item"><a href="#" class="footer__desktop-info-link">Врачи</a></div>
+            </div>
+            <div class="footer__desktop-info-item-block">
+                <div class="footer__desktop-info-item"><a href="#" class="footer__desktop-info-link">Стоимость</a></div>
+                <div class="footer__desktop-info-item"><a href="#" class="footer__desktop-info-link">Отзывы</a></div>
+            </div>
+            <div class="footer__desktop-info-item-block">
+                <div class="footer__desktop-info-item"><a href="#" class="footer__desktop-info-link">Онлайн-оплата</a></div>
+                <div class="footer__desktop-info-item"><a href="#" class="footer__desktop-info-link">Пациентам</a></div>
+                <div class="footer__desktop-info-item"><a href="#" class="footer__desktop-info-link">Контакты</a></div>
+            </div>
+            <div class="footer__desktop-info-item-block">
+                <h3 class="contacts__address">СПб, Спасский пер., дом 14/35</h3>
+                <h3 class="contacts__phone">+7 (812) 603-91-75</h3>
+                <p class="contacts__description">Ежедневно с 09:00 до 21:00</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer__embrylife-social">
+        <div class="contacts__embrylife-social-wrapper top">
+            <div class="contacts__embrylife-social">
+                <a href="#" class="contacts__social-link">
+                    <include src="icons/header/tgLogo.html">
+                </a>
+                <a href="#" class="contacts__social-link">
+                    <include src="icons/header/vkLogo.html">
+                </a> 
+                <a href="#" class="contacts__social-link">
+                    <include src="icons/header/playLogo.html">
+                </a>
+            </div>
+            <h4 class="contacts__description-embrylife">Об ЭКО в Embrylife</h4>
+            <h5 class="contacts__join">Вступить в сообщество</h5>
+        </div>
+        <div class="contacts__embrylife-social-wrapper">
+            <div class="contacts__embrylife-social">
+                <a href="#" class="contacts__social-link">
+                    <include src="icons/header/tgLogo.html">
+                </a>
+                <a href="#" class="contacts__social-link">
+                    <include src="icons/header/vkLogo.html">
+                </a> 
+            </div>
+            <h4 class="contacts__description-embrylife">Центр женского здоровья</h4>
+            <h5 class="contacts__join">Вступить в сообщество</h5>
+        </div>
+        <div class="footer__search-block-desktop">
+            <div class="footer__search-input-wrapper">
+                <input class="footer__search-input" placeholder="Поиск по сайту">
+            </div>
+            <div class="footer__coat-of-arms">
+                <div class="footer__coat-of-arms-logo">
+                    <img src="images/footer/coat-of-arms.png" alt="coat-of-arms">
+                    <!-- <include scr="icons/footer/coat-of-arms.html"> -->
+                </div>
+                <p class="footer__coat-of-arms-description">
+                    Независимая оценка качества оказания услуг медицинскими организациями
+                </p>
+            </div>
+        </div>
+        <div class="footer__button-block">
+            <button type="button" class="footer__request-button button button--second">Запись на прием</button>
+            <button type="button" class="footer__review-button button button--third" id="review-button">Оценить качество клиники</button>
+        </div>
+    </div>
+    <div class="footer__contacts-wrapper">
+        <include src="components/content/contacts.html"></include>
+    </div>
+    <div class="footer__search-block-mobile">
         <div class="footer__search-input-wrapper">
             <input class="footer__search-input" placeholder="Поиск по сайту">
         </div>
@@ -93,7 +168,7 @@
             </p>
         </div>
     </div>
-    <div class="footer__review-button-wrapper">
+    <div class="footer__review-button-wrapper-mobile">
         <button type="button" class="button button--third" id="review-button">Оценить качество клиники</button>
     </div>
     <ul class="footer__links-block">
