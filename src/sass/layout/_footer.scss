@@ -63,7 +63,7 @@
     &__coat-of-arms-description {
         display: none;
     }
-    &__review-button-wrapper {
+    &__review-button-wrapper-mobile {
         margin-bottom: 26px;
     }
     &__links-block {
@@ -109,6 +109,7 @@
             margin-left: 0;
             padding: 0;
             height: auto;
+            gap: 84px;
         }
         .contacts__way-button {
             display: none;
@@ -122,6 +123,7 @@
         }
         &__desktop-info {
             display: flex;
+            gap: 280px;
             margin-top: 69px;
             margin-bottom: 22px;
         }
@@ -138,20 +140,26 @@
         }
         &__desktop-info-item-block {
             text-align: left;
-            &:nth-child(2) {
-              margin-left: 255px;  
+            &:last-child {
+                margin-left: -48px;
             }
-            &:nth-child(3) {
-                margin-left: 255px;  
-            }
-            &:nth-child(4) {
-                margin-left: 207px;  
-            }
+            // &:nth-child(2) {
+            //   margin-left: 255px;  
+            // }
+            // &:nth-child(3) {
+            //     margin-left: 255px;  
+            // }
+            // &:nth-child(4) {
+            //     margin-left: 207px;  
+            // }
         }
         .contacts__address,
         .contacts__phone,
         .contacts__description {
             text-align: left;
+        }
+        .contacts__address {
+            width: 210px;
         }
         .contacts__description {
             margin-bottom: 0;
@@ -164,7 +172,7 @@
         .contacts__embrylife-social-wrapper {
             text-align: left;
             &.top {
-                margin-right: 160px;
+                margin-right: 186px;
                 margin-bottom: 0;
             }
         }
@@ -174,7 +182,7 @@
         &__search-block-desktop {
             display: block;
             width: 300px;
-            margin-left: 108px;
+            margin-left: 130px;
         }
         &__coat-of-arms {
             display: flex;
@@ -190,13 +198,16 @@
             min-width: 30px;
         }
         &__button-block {
-            margin-left: 68px;
+            width: 220px;
+            margin-left: 88px;
         }
         &__request-button {
+            font-size: 18px;
             margin-bottom: 22px;
             height: 60px;
         }
         &__review-button {
+            font-size: 18px;
             height: 40px;
         }
         &__links-item {
