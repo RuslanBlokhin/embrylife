@@ -15,7 +15,7 @@
         top: 0;
         padding: 15px 10px 10px;
         background-color: #F3F2F2;
-        z-index: 10;
+        z-index: 5;
     }
     &__mobile {
         @include fc(space-between);
